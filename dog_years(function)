@@ -1,0 +1,14 @@
+"""
+dog_years() function that calculate and return a string featuring the 
+dog's name as well as its age in human years
+"""
+
+def dog_years(name, age):
+  dog_years = age * 7
+  return name + ' is ' + str(dog_years) + ' years old in human years.'
+
+dog_years('Rosco', 5)
+dog_years('Nola', 7)
+
+print(dog_years('Rosco', 5))
+print(dog_years('Nola', 7))
