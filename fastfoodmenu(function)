@@ -1,0 +1,30 @@
+#A get_item() function that takes in one parameter, the number of the item you want to order,
+# and returns the name of that item!
+
+def get_item(number):
+  if number == 1:
+    return 'Cheeseburger'
+  elif number == 2:
+    return 'Fries'
+  elif number == 3:
+    return 'Soda'
+  elif number == 4:
+    return 'Ice Cream'
+  elif number == 5:
+    return 'Cookie' 
+  else:
+    return 'Invalid Input'
+
+def welcome():
+  print('Welcome to Jasmine\'s Burgers')
+  print('Here\'s our Menu')
+  print('Cheesburger')
+  print('Fries')
+  print('Soda')
+  print('Ice Cream')
+  print('Cookie')
+
+welcome() 
+
+order = int(input('What you like to order? Choose between 1-5: '))
+print(get_item(order))
