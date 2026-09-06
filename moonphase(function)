@@ -1,0 +1,24 @@
+# A moon_phase() function that takes in a phase parameter of the
+# Moon phase name given below and returns the correct Moon emoji for it
+
+def moon_phase(phase):
+  if phase == 'New Moon':
+    print('🌑')
+  elif phase == 'Waxing Crescent':
+    print('🌒')
+  elif phase == 'First Quarter':
+    print('🌓')
+  elif phase == 'Waxing Gibbous':
+    print('🌔')
+  elif phase == 'Full Moon':
+    print('🌕')
+  elif phase == 'Waning Gibbous':
+    print('🌖')
+  elif phase == 'Last Quarter':
+    print('🌗')   
+  elif phase == 'Waning Crescent':
+    print('🌘') 
+  else:
+    return 'Invalid moon phase'
+
+moon_phase('Waning Crescent')
