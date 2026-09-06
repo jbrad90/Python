@@ -1,0 +1,10 @@
+import random
+
+# In each round, the slot machine displays three random items. 
+# If there are three sevens, you win!
+
+symbols = ['🍒',' 🍇', '🍉', '7️⃣']
+
+results = random.choices(symbols, k=3)
+
+print(results[0] + ' | ' + results[1] + ' | ' + results[2] + ' | ')
