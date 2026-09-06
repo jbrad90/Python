@@ -1,0 +1,28 @@
+import random
+
+# Program that gives the user random fortunes by 
+# calling the function 3 times 
+
+def fortune():
+  random_fortune = random.randint(1,7)
+  if random_fortune == 1:
+    print("Don't pursue happiness – create it.")
+  elif random_fortune == 2:
+    print("All things are difficult before they are easy.")
+  elif random_fortune == 3:
+    print("The early bird gets the worm, but the second mouse gets the cheese.")
+  elif random_fortune == 4:
+    print("Someone in your life needs a letter from you.")
+  elif random_fortune == 5:
+    print("Don't just think. Act!")
+  elif random_fortune == 6:
+    print("Your heart will skip a beat.")
+  elif random_fortune == 7:
+    print("The fortune you search for is in another cookie.")
+  else:
+    print("Help! I'm being held prisoner in a Chinese bakery!")
+
+
+fortune()
+fortune()
+fortune()
