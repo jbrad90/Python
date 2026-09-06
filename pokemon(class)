@@ -1,0 +1,38 @@
+#Pokédex device that tracks the information for Pokémon that are seen or caught.
+
+# define a Pokemon class
+class Pokemon:
+    def __init__(self, entry, name, types, description, is_caught):
+      self.entry = entry
+      self.name = name
+      self.types = types
+      self.description = description
+      self.is_caught = is_caught
+
+    # create an instance method that prints out their name twice
+ 
+    def speak(self):
+      print(self.name + ' ' + self.name)
+
+    #instance method that prints the attributes of a Pokemon 
+    def display_details(self):
+      print('Entry:' + str(self.entry))
+      print('Name:' + self.name)
+      print('Type:' + self.types)
+      print('Description:' + self.description)
+
+      if self.is_caught == True:
+        print(self.name + ' has already been caught!')
+      else:
+        print(self.name + ' has not been caught!')
+
+#Pokemon objects
+pikachu = Pokemon(25, 'Pickachu', 'Electric', 'It has small electric sacs on both its cheeks. If threatened, it looses electric charges from the sacs.' , False)
+bulbasaur = Pokemon(1 ,'Bulbasaur','Water','For some time after its birth, it uses the nutrients that are packed into the seed on its back in order to grow.', False)
+charmeleon = Pokemon(5, 'Chameleon', 'Fire', 'When it swings its burning tail, the temperature around it rises higher and higher, tormenting its opponents.', True)
+
+bulbasaur.speak()
+print('')
+charmeleon.display_details()
+print('')
+pikachu.display_details()
